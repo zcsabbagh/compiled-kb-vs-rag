@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Experiment artifacts (regenerable, large, or expensive)
+cache/
+data/raw/
+data/raw_text/
+data/corpora/
+results/raw_results.jsonl
+results/cost_log.jsonl
+
+# Analysis outputs (regenerate from raw_results)
+analysis/*.png
+analysis/*.csv
+
+# OS
+.DS_Store
