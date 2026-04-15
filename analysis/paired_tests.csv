@@ -1,0 +1,7 @@
+model,comparison,n_paired,mean_a,mean_b,delta,wilcoxon_stat,p_value,cohens_d
+llama-8b,A_raw vs B_summaries,60,3.2,3.267,0.067,138.5,0.5071,0.047
+llama-8b,B_summaries vs C_wiki,60,3.267,2.933,-0.333,107.5,0.0779,-0.232
+llama-8b,A_raw vs C_wiki,60,3.2,2.933,-0.267,245.0,0.3622,-0.145
+sonnet-4,A_raw vs B_summaries,60,3.5,3.7,0.2,131.5,0.2553,0.13
+sonnet-4,B_summaries vs C_wiki,60,3.7,3.133,-0.567,64.0,0.002,-0.414
+sonnet-4,A_raw vs C_wiki,60,3.5,3.133,-0.367,219.0,0.1726,-0.19

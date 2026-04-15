@@ -1,0 +1,3 @@
+model,n,mean_A,mean_C,delta_C-A,cohens_d
+llama-8b,60,3.2,2.933,-0.267,-0.145
+sonnet-4,60,3.5,3.133,-0.367,-0.19

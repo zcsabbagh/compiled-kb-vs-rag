@@ -19,14 +19,12 @@ cache/
 chroma/
 data/raw/
 data/raw_text/
-data/corpora/
-results/raw_results.jsonl
-results/judged_results.jsonl
-results/cost_log.jsonl
 
-# Analysis outputs (regenerate from raw_results)
-analysis/*.png
-analysis/*.csv
+# Data corpora: keep derived artifacts (summaries, wiki) in git so the
+# compiled knowledge bases are reviewable without rerunning the ~$4 compile.
+
+# Analysis outputs kept in git so a reviewer can see the final tables/plots.
+# Raw + judged results and cost log kept for auditability.
 
 # OS
 .DS_Store

@@ -1,0 +1,7 @@
+condition,model,n,pct_faithful
+A_raw,llama-8b,60,53.3
+A_raw,sonnet-4,60,80.0
+B_summaries,llama-8b,60,63.3
+B_summaries,sonnet-4,59,79.7
+C_wiki,llama-8b,60,65.0
+C_wiki,sonnet-4,60,91.7

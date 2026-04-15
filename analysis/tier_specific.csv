@@ -1,0 +1,13 @@
+metric,condition,model,n,value
+coverage(synthesis),A_raw,llama-8b,25,0.08
+coverage(synthesis),A_raw,sonnet-4,25,0.34
+coverage(synthesis),B_summaries,llama-8b,25,0.1
+coverage(synthesis),B_summaries,sonnet-4,25,0.44
+coverage(synthesis),C_wiki,llama-8b,25,0.38
+coverage(synthesis),C_wiki,sonnet-4,25,0.56
+contradiction_rate,A_raw,llama-8b,10,0.0
+contradiction_rate,A_raw,sonnet-4,10,0.0
+contradiction_rate,B_summaries,llama-8b,10,0.0
+contradiction_rate,B_summaries,sonnet-4,10,0.1
+contradiction_rate,C_wiki,llama-8b,10,0.1
+contradiction_rate,C_wiki,sonnet-4,10,0.0

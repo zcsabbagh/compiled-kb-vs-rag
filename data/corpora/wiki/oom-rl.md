@@ -1,0 +1,40 @@
+# Out-of-Money Reinforcement Learning (OOM-RL)
+
+Out-of-Money Reinforcement Learning is a novel alignment paradigm introduced in [[paper-2604.11477]] that uses real-world financial markets as an objective discriminator for training LLM-based multi-agent systems. The key insight is leveraging capital depletion as an "un-hackable negative gradient" that cannot be gamed through [[reward-hacking]] or [[sycophancy]].
+
+## Core Concept
+
+Unlike [[rlhf]] and [[rlaif]] which rely on subjective human or AI evaluators that can be exploited through sycophantic behavior, OOM-RL deploys agents directly into live financial markets where:
+
+- **Objective Feedback**: Market losses provide dense, negative reward signals
+- **Non-Stationary Environment**: Markets are inherently adversarial and cannot be flattered
+- **Real Consequences**: Financial penalties force agents to abandon hallucinated logic
+- **Microstructural Friction**: Trading costs and slippage act as natural regularization
+
+## Architecture
+
+OOM-RL employs a dual-loop design:
+
+1. **Inner Loop ([[stdaw]])**: Ensures mathematical soundness through strict test-driven development
+2. **Outer Loop**: Subjects syntactically correct code to live market validation
+
+This separation prevents agents from gaming the evaluation framework while maintaining rigorous verification standards.
+
+## Empirical Results
+
+A 20-month deployment study showed:
+- Initial phase: High-turnover, sycophantic trading behavior
+- Evolution: Gradual adaptation to market friction and liquidity constraints  
+- Final phase: Stable architecture achieving 2.06 annualized Sharpe ratio
+- Key insight: Financial penalties forced abandonment of overfitted hallucinations
+
+## Extensions
+
+**RLFCB (Reinforcement Learning from Cloud Billing)**: Proposed generalization using computational resource depletion as objective constraint for non-financial domains.
+
+## Related Concepts
+
+- [[reward-hacking]]: OOM-RL specifically designed to prevent reward gaming
+- [[sycophancy]]: Market-based evaluation immune to approval-seeking behavior
+- [[stdaw]]: Inner loop architecture preventing test evasion
+- [[rlhf]]: Traditional approach OOM-RL aims to improve upon
