@@ -88,9 +88,8 @@ def chat(model: str, messages, max_tokens=2000, temperature=0.0, **kwargs):
     if cached is not None:
         return cached
 
-    sleep = 1.0 if "sonnet" in model else 2.0
-    time.sleep(sleep)
-
+    # Paid OpenRouter key has no per-minute cap; rely on exponential backoff
+    # below for any sporadic 429s.
     last_err = None
     for attempt in range(5):
         try:
@@ -147,7 +146,6 @@ def embed(texts: list[str], model: str = "openai/text-embedding-3-small"):
                     emb = d.embedding
                     out[j] = emb
                     CACHE.set(_cache_key(model, [], text=texts[j]), emb)
-                time.sleep(0.5)
                 break
             except Exception as e:
                 wait = min(60, 5 * (2**attempt))
